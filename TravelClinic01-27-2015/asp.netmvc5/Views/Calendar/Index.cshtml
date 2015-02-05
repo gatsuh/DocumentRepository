@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Calendar Page";
+}
+<div class=" = jumbotron">
+    <h1>Event Calendar</h1>
+    <div id="calendar"></div>
+</div>
+@section scripts{
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var calendar = $('#calendar');
+           calendar.fullCalendar({
+                           header: {
+                           left: 'prev,next today',
+                           center: 'title',
+                           right: 'month,agendaWeek,agendaDay'
+                       },
+                       defaultDate: '2014-11-12',
+                       editable: true,
+                       eventLimit: true, // allow "more" link when too many events
+                       selectable: true,
+                       selectHelper: true,
+                       select: function (start, end) {
+                           var title = prompt('Event Title:');
+                           var eventData;
+                           if (title) {
+                               eventData = {
+                                   title: title,
+                                   start: start,
+                                   end: end
+                               };
+                               $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+                           }
+                           $('#calendar').fullCalendar('unselect');
+                          
+
+                       }
+            });
+        });
+        
+
+    </script>
+
+@Styles.Render("~/Content/css")
+@Styles.Render("~/Content/fullcalendarcss")
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/fullcalendarjs")
+
+}

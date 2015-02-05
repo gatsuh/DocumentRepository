@@ -1,0 +1,14 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+Welcome to the Document Repository - clicking File will get you to the repository.
+
+<ul>
+    @foreach (string folder in Model)
+    {
+        <li><a href="@Url.Action(MVC.Home.ActionNames.Files, MVC.Home.Name, new { subFolder = folder })">@folder</a> </li>
+    }
+</ul>

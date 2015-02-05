@@ -1,0 +1,16 @@
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\ElFinder.Net.dll
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\ElFinder.Net.pdb
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\obj\Debug\ElFinder.Net.dll
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\obj\Debug\ElFinder.Net.pdb
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\System.Web.Mvc.dll
+C:\Users\Gatsuh\CIS420\elFinder.Net\elFinder.Net\bin\Debug\System.Web.Mvc.xml
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\ElFinder.Net.dll
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\ElFinder.Net.pdb
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\System.Web.Mvc.dll
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\bin\Debug\System.Web.Mvc.xml
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\obj\Debug\ElFinder.Net.dll
+C:\Users\Gatsuh\CIS420\CIS420\TravelClinic01-27-2015\elFinder.Net\obj\Debug\ElFinder.Net.pdb
