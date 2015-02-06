@@ -13,6 +13,28 @@ namespace asp.netmvc5
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute(null, "connector", new { controller = "File", action = "Index" });
+
+            routes.MapRoute(
+                "Index",
+                "DocumentRepository/Index",
+                new
+                {
+                    controller = "DocumentRepository",
+                    action = "Index"
+                }
+            );
+
+            routes.MapRoute(
+                "Files",
+                "DocumentRepository/Files/{subFolder}",
+                new
+                {
+                    controller = "DocumentRepository",
+                    action = "Files"
+                }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

@@ -5,8 +5,18 @@
 }
 
 @* Bundles with elFinder's CSS and JavaScript files configured in App_Start\BundleConfig.cs*@
+@Styles.Render("~/Content/themes/ui-lightness/css", "~/Content/css")
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+<script src="http://elfinder.org/demo/js/elfinder.min.js"></script>​
 @Styles.Render("~/Content/elfinder")
 @Scripts.Render("~/Scripts/elfinder")
+<script>
+    $.widget.bridge('uitooltip', $.ui.tooltip);
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+
+
 
 <script type="text/javascript">
     $(function ()

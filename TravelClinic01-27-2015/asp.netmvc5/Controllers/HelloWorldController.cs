@@ -1,8 +1,10 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using asp.netmvc5.Controllers;
 
-namespace MvcMovie.Controllers
+namespace asp.netmvc5.Controllers
 {
+
     public class HelloWorldController : Controller
     {
         //
@@ -22,5 +24,5 @@ namespace MvcMovie.Controllers
 
             return View();
         }
-	}
+    }
 }

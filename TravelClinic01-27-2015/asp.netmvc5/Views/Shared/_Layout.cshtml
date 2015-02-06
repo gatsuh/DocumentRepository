@@ -6,7 +6,9 @@
     <title>@ViewBag.Title - Vaccine Inventory</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,7 +30,7 @@
                     <li>@Html.ActionLink("Vaccines", "Index", "Vaccines")</li>
                     <li>@Html.ActionLink("Calendar", "Index", "Calendar")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <!--This is causing layout problems @*Html.Partial("_LoginPartial")*@-->
             </div>
         </div>
     </div>
@@ -39,9 +41,5 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

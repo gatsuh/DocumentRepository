@@ -36,6 +36,22 @@ namespace asp.netmvc5
             bundles.Add(new ScriptBundle("~/bundles/fullcalendarjs").Include(
                       "~/Scripts/jquery-ui-1.10.4.min.js","~/Scripts/moment.js",
                       "~/Scripts/fullcalendar.min.js"));
+
+            #region elFinder bundles
+
+            bundles.Add(new ScriptBundle("~/Scripts/elfinder").Include(
+                             "~/Content/elfinder/js/elfinder.full.js"
+                //"~/Content/elfinder/js/i18n/elfinder.pt_BR.js"
+                             ));
+
+            bundles.Add(new StyleBundle("~/Content/elfinder").Include(
+                            "~/Content/elfinder/css/elfinder.full.css",
+                            "~/Content/elfinder/css/theme.css"));
+
+            #endregion
+
+            bundles.Add(new StyleBundle("~/Content/themes/ui-lightness/css").Include(
+                                        "~/Content/themes/ui-lightness/jquery.ui.all.css"));
         }
     }
 }
